@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55afa5da-546e-4f9e-acd4-53565855f989" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Archivo/ArchivoDireccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Archivo/DireccionArchivo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejecutable.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ejecutable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Administrador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Agencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Agencia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Password.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Password.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Vendedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Vendedor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/VendedorDuenio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/Fecha.java" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Fecha.java" afterDir="false" />
-    </list>
+    <list default="true" id="55afa5da-546e-4f9e-acd4-53565855f989" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,7 +61,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fecha.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Fecha.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utils/Fecha.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
@@ -106,7 +93,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ejecutable.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Ejecutable.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Ejecutable.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
@@ -282,7 +269,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -747,13 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ejecutable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/Administrador.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -797,6 +777,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="42" lean-forward="true" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ejecutable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
         </state>
       </provider>
     </entry>
