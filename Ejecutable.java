@@ -6,6 +6,7 @@ public class Ejecutable {
 
     public static void main(String[] args) {
 
+        System.out.println("hola mundo");
 
         //Domicilio domicilio = new Domicilio("25 de mayo","5551","9","h","7600","Mar del Plata");
                 //String nombre, String apellido, String dni, String fecha_nacimiento, String email, int edad, String telefono, Domicilio domicilio
