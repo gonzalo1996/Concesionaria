@@ -89,6 +89,17 @@ public class Persona implements Serializable {
         this.domicilio = domicilio;
     }
 
+    public Persona(){
+        setNombre("");
+        setApellido("");
+        setDni("");
+        setFecha_nacimiento(null);
+        setEmail("");
+        setEdad(0);
+        setTelefono("");
+        setDomicilio(null);
+    }
+
     public Persona(String nombre, String apellido, String dni, String fecha_nacimiento, String email, int edad, String telefono, Domicilio domicilio) {
 
         this.nombre = nombre;

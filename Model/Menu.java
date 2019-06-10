@@ -10,7 +10,6 @@ import javax.naming.ldap.Control;
 public class Menu {
 
     public void menu(){
-
     }
 
     public void inicio(){

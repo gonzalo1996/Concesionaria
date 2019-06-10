@@ -24,11 +24,9 @@ public abstract class Usuario {
         return "\nDNI: " + nombre_usuario;
     }
 
-
     /*
      * Modifica los datos de cualquier usuario
      */
-
     public void modificarDatosUsuario() {
 
         boolean requisitosContrasenia;
@@ -37,8 +35,7 @@ public abstract class Usuario {
         String psw = "";
 
         while (!userConfirm.equals("s")) {
-
-            System.out.println("Ingresar nuevo nombre_usuario: ");
+            ControladoraUsuario.mostrar("Ingresar nuevo nombre usuario.");
             id = ControladoraUsuario.ingresarString();
 
 
@@ -46,17 +43,17 @@ public abstract class Usuario {
             su posible contrasenia*/
             requisitosContrasenia = false;
             while (!requisitosContrasenia) {
-                System.out.println("Ingrese nueva contrasenia (alfanumerica 8-20 digitos): ");
+                ControladoraUsuario.mostrar("Ingrese nueva contrasenia (alfanumerica 8-20 digitos): ");
                 psw = ControladoraUsuario.ingresarString();
 
                 if (Password.hasLongitudCorrecta(psw) && Password.isAlfanumerico(psw)) {
                     requisitosContrasenia = true;
                 } else {
-                    System.out.println("La contrasenia ingresada no cumple todos los requisitos: ");
+                    ControladoraUsuario.mostrar("La contrasenia ingresada no cumple todos los requisitos: ");
                 }
             }
 
-            System.out.println("Usted ha ingresado los siguientes datos: " +
+            ControladoraUsuario.mostrar("Usted ha ingresado los siguientes datos: " +
                     "\nnombre_usuario: " + id +
                     "\npassword: " + psw +
                     "\nDesea confirmar los datos? s/n");

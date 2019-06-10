@@ -1,9 +1,11 @@
 package Model;
 
+import java.io.Serializable;
+
 /**
  * La clase vendedor  vende,compra vehiculos y registra clientes.
  */
-public class Vendedor extends Persona{
+public class Vendedor extends Persona implements Serializable {
 
     Usuario username;
 

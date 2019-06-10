@@ -20,7 +20,7 @@ public class Password {
     }
 
     /**
-     * Metodo estatico que comprobara si la clave es alfanumerica. Su proposito es que sea invocado previo a la
+     * Metodo estatico que comprueba si la clave es alfanumerica. Su proposito es que sea invocado previo a la
      * instanciacion de la clase.
      * @param string El valor a comprobar.
      * @return true si es alfanumerico (unicamente digitos o letras), false si no lo es.
