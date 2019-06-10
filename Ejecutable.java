@@ -6,8 +6,7 @@ public class Ejecutable {
 
     public static void main(String[] args) {
 
-        Agencia mi_agencia = new Agencia();
-        Administrador admin = new Administrador();
+        System.out.println("es este juanga");
 
         //Domicilio domicilio = new Domicilio("25 de mayo","5551","9","h","7600","Mar del Plata");
                 //String nombre, String apellido, String dni, String fecha_nacimiento, String email, int edad, String telefono, Domicilio domicilio
