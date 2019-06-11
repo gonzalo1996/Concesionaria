@@ -2,6 +2,7 @@ import Archivo.DireccionArchivo;
 import Model.Administrador;
 import Model.Agencia;
 import Model.ControladoraUsuario;
+import Model.Menu;
 import Utils.Fecha;
 import Utils.IOArchivoGenerico;
 
@@ -19,12 +20,12 @@ public class Ejecutable {
         System.out.println(admin.getUsuario().getNombre_usuario()+"\nGrabado con exito.");
         IOArchivoGenerico.escribirObjeto( admin, DireccionArchivo.ADMINISTRADOR );*/
 
-        ControladoraUsuario controlador = new ControladoraUsuario( Agencia.getLaInstancia() );
+        //ControladoraUsuario controlador = new ControladoraUsuario( Agencia.getLaInstancia() );
 
-        controlador.inicio();
+       // controlador.inicio();
 
 
-
+        Menu.Menu_Admin();
 
 
 

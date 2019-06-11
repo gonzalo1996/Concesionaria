@@ -63,6 +63,7 @@ public class ControladoraUsuario implements Serializable {
     /**
      * Inicia el programa, cargando los datos
      */
+
     public void iniciar_programa(){
 
         Usuario user_a_loggear = ingreso_datos_de_usuario_a_verificar();
