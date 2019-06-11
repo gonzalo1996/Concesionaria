@@ -1,6 +1,8 @@
 package Model;
 
-public abstract class Usuario {
+import java.io.Serializable;
+
+public class Usuario implements Serializable {
 
     private String nombre_usuario;
     private Password password;
@@ -8,6 +10,12 @@ public abstract class Usuario {
     public Usuario(String nombre_usuario, Password password, String nombre) {
         this.nombre_usuario = nombre_usuario;
         this.password = password;
+    }
+
+    public Usuario(){
+        setNombre_usuario("admin");
+        setPassword(new Password( "12345678" ));
+
     }
 
     public String getNombre_usuario() {

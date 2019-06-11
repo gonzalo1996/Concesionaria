@@ -7,14 +7,23 @@ public class Agencia {
     ArrayList<Vehiculo> lista_vehiculos;
     ArrayList<Venta> lista_ventas;
     ArrayList<Persona> lista_clientes;
-    Administrador admin;
+    Administrador admin; //usuario por defecto: admin, password por defecto: password
+    private static Agencia laInstancia = new Agencia();
 
 
-    public Agencia() {
+    private Agencia() {
         lista_vendedores = new ArrayList<>();
         lista_vehiculos = new ArrayList<>();
         lista_ventas = new ArrayList<>();
         lista_clientes = new ArrayList<>();
+    }
+
+    public static Agencia getLaInstancia() {
+        return laInstancia;
+    }
+
+    public static void setLaInstancia(Agencia laInstancia) {
+        Agencia.laInstancia = laInstancia;
     }
 
     public void agregarVendedor(Usuario u){

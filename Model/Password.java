@@ -1,11 +1,13 @@
 package Model;
 
+import java.io.Serializable;
+
 /**
  * Clase que contiene como unico atributo propio un string. Todos los usuarios dentro del sistema deben disponer de
  * un Password para poder iniciar sesion.
  * @see Usuario
  */
-public class Password {
+public class Password implements Serializable {
 
     private static final int LONGITUD_MIN = 8;
     private static final int LONGITUD_MAX = 20;

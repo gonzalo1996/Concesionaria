@@ -4,7 +4,7 @@ import Utils.Fecha;
 
 import java.io.Serializable;
 
-public class Vehiculo implements Serializable {
+public abstract class Vehiculo implements Serializable {
 
     private Boolean vendido;
     private Fecha fecha_adquisicion;

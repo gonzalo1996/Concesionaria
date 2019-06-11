@@ -1,6 +1,8 @@
 package Model;
 
-public class Domicilio {
+import java.io.Serializable;
+
+public class Domicilio implements Serializable {
     private String calle;
     private String numero_calle;
     private String piso;

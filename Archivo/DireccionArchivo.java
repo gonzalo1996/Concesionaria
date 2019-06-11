@@ -1,6 +1,8 @@
 package Archivo;
 
-public class DireccionArchivo {
+import java.io.Serializable;
+
+public class DireccionArchivo implements Serializable {
     public static final String DIR = "dir/";
 
     public static final String ADMINISTRADOR = DIR + "administrador.dat";
