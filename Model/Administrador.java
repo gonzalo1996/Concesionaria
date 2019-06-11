@@ -9,7 +9,7 @@ public class Administrador extends Persona implements Serializable {
 
     Usuario usuario;
 
-    public Administrador (){
+    private Administrador (){
         super();
         usuario = new Usuario();
     }
@@ -25,5 +25,9 @@ public class Administrador extends Persona implements Serializable {
 
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
+    }
+
+    public static Administrador proveerDefaultAdmin(){
+        return new Administrador();
     }
 }

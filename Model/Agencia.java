@@ -1,5 +1,8 @@
 package Model;
 
+import Archivo.DireccionArchivo;
+import Utils.IOArchivoGenerico;
+
 import java.util.ArrayList;
 
 public class Agencia {
@@ -12,10 +15,21 @@ public class Agencia {
 
 
     private Agencia() {
-        lista_vendedores = new ArrayList<>();
-        lista_vehiculos = new ArrayList<>();
-        lista_ventas = new ArrayList<>();
-        lista_clientes = new ArrayList<>();
+
+        if ((admin = IOArchivoGenerico.leerObjeto(DireccionArchivo.ADMINISTRADOR)) == null) {
+            admin = Administrador.proveerDefaultAdmin();
+        }
+        if ((lista_vendedores = IOArchivoGenerico.leerObjeto(DireccionArchivo.VENDEDORES)) == null) {
+            lista_vendedores = new ArrayList<>();
+        }
+        if ((lista_vehiculos = IOArchivoGenerico.leerObjeto(DireccionArchivo.VEHICULOS)) == null) {
+            lista_vehiculos= new ArrayList<>();
+        }
+
+        if ((lista_clientes = IOArchivoGenerico.leerObjeto(DireccionArchivo.CLIENTES)) == null) {
+            lista_clientes = new ArrayList<>();
+        }
+
     }
 
     public static Agencia getLaInstancia() {

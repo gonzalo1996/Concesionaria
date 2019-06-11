@@ -24,7 +24,10 @@ public class ControladoraUsuario implements Serializable {
      */
     public void cargar_datos_agencia(){
         //abro los archivos para cargar mi agencia.
+
+
         Administrador admin = IOArchivoGenerico.leerObjeto( DireccionArchivo.ADMINISTRADOR );
+
         //Vehiculo v = IOArchivoGenerico.leerObjeto( DireccionArchivo.VEHICULOS );
 
         getAgencia().setAdmin( admin );
