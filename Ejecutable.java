@@ -26,9 +26,6 @@ public class Ejecutable {
 
 
         Menu.Menu_Admin();
-        System.out.println("hola");
-        
-        
 
 
 
