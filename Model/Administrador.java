@@ -14,6 +14,8 @@ public class Administrador extends Persona implements Serializable {
         usuario = new Usuario();
     }
 
+
+
     public Administrador(String nombre, String apellido, String dni, String fecha_nacimiento, String email, int edad, String telefono, Domicilio domicilio, Usuario usuario) {
         super(nombre, apellido, dni, fecha_nacimiento, email, edad, telefono, domicilio);
         this.usuario = usuario;

@@ -6,7 +6,7 @@ import Utils.IOArchivoGenerico;
 import java.util.ArrayList;
 
 public class Agencia {
-    ArrayList<Usuario> lista_vendedores;
+    ArrayList<Vendedor> lista_vendedores;
     ArrayList<Vehiculo> lista_vehiculos;
     ArrayList<Venta> lista_ventas;
     ArrayList<Persona> lista_clientes;
@@ -14,7 +14,7 @@ public class Agencia {
     private static Agencia laInstancia = new Agencia();
 
 
-    private Agencia() {
+    private Agencia(){
 
         if ((admin = IOArchivoGenerico.leerObjeto(DireccionArchivo.ADMINISTRADOR)) == null) {
             admin = Administrador.proveerDefaultAdmin();
@@ -32,6 +32,22 @@ public class Agencia {
 
     }
 
+    public ArrayList<Vendedor> getLista_vendedores() {
+        return lista_vendedores;
+    }
+
+    public ArrayList<Vehiculo> getLista_vehiculos() {
+        return lista_vehiculos;
+    }
+
+    public ArrayList<Venta> getLista_ventas() {
+        return lista_ventas;
+    }
+
+    public ArrayList<Persona> getLista_clientes() {
+        return lista_clientes;
+    }
+
     public static Agencia getLaInstancia() {
         return laInstancia;
     }
@@ -40,8 +56,8 @@ public class Agencia {
         Agencia.laInstancia = laInstancia;
     }
 
-    public void agregarVendedor(Usuario u){
-        lista_vendedores.add(u);
+    public void agregarVendedor(Vendedor vendedor){
+        lista_vendedores.add(vendedor);
     }
 
     public void agregarVehiculo(Vehiculo v){

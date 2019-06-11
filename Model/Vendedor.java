@@ -13,4 +13,8 @@ public class Vendedor extends Persona implements Serializable {
         super(nombre, apellido, dni, fecha_nacimiento, email, edad, telefono, domicilio);
         this.username = username;
     }
+
+    public Usuario getUsername() {
+        return username;
+    }
 }

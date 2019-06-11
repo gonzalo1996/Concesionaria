@@ -5,16 +5,28 @@ import java.io.Serializable;
 public class Usuario implements Serializable {
 
     private String nombre_usuario;
-    private Password password;
+    private Password contrasenia;
 
-    public Usuario(String nombre_usuario, Password password, String nombre) {
+    public Usuario(String nombre_usuario, Password contrasenia) {
         this.nombre_usuario = nombre_usuario;
-        this.password = password;
+        this.contrasenia = contrasenia;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if( obj instanceof Usuario ){
+            Usuario u = (Usuario)obj;
+
+            if(this.getNombre_usuario().equals(u.getNombre_usuario()) && this.obtener_contrasenia().equals(u.obtener_contrasenia())){
+                return true;
+            }
+        }
+        return false;
     }
 
     public Usuario(){
         setNombre_usuario("admin");
-        setPassword(new Password( "12345678" ));
+        setContrasenia(new Password( "contrasenia" ));
 
     }
 
@@ -22,8 +34,12 @@ public class Usuario implements Serializable {
         return nombre_usuario;
     }
 
-    public Password getPassword() {
-        return password;
+    public Password getContrasenia() {
+        return contrasenia;
+    }
+
+    public String obtener_contrasenia(){
+        return getContrasenia().getClave();
     }
 
 
@@ -63,13 +79,13 @@ public class Usuario implements Serializable {
 
             ControladoraUsuario.mostrar("Usted ha ingresado los siguientes datos: " +
                     "\nnombre_usuario: " + id +
-                    "\npassword: " + psw +
+                    "\ncontrasenia: " + psw +
                     "\nDesea confirmar los datos? s/n");
             userConfirm = ControladoraUsuario.ingresarString();
 
             if (userConfirm.equals("s")) {
                 setNombre_usuario(id);
-                setPassword(new Password(psw));
+                setContrasenia(new Password(psw));
             }
         }
     }
@@ -78,8 +94,8 @@ public class Usuario implements Serializable {
         this.nombre_usuario = nombre_usuario;
     }
 
-    public void setPassword(Password password) {
-        this.password = password;
+    public void setContrasenia(Password contrasenia) {
+        this.contrasenia = contrasenia;
     }
 
 

@@ -13,15 +13,6 @@ public class Menu {
 
     }
 
-    public void inicio(){
-        ControladoraUsuario.mostrar("" +
-                "Bienvenido." +
-                "\nIngrese usuario: ");
-
-        ControladoraUsuario.ingresarString();
-        ControladoraUsuario.mostrar("\nIngrese contraseña: ");
-    }
-
     public void menu_admin(){
         ControladoraUsuario.mostrar(
                 "1_ Administrar Vendedores" +
