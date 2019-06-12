@@ -99,4 +99,11 @@ public abstract class Vehiculo implements Serializable {
     public void setDuenio_nuevo(Persona duenio_nuevo) {
         this.duenio_nuevo = duenio_nuevo;
     }
+
+	@Override
+	public String toString() {
+		return  "\n Marca=" + marca +"\nModelo=" + modelo +"\nFecha Adquisicion=" + fecha_adquisicion + "\nValor Adquisicion=" + valor_adquisicion
+				+ "\nGasto=" + gasto + "\nValor Estimado Venta=" + valor_estimado_venta ;
+	}
+    
 }

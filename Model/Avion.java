@@ -8,14 +8,25 @@ public class Avion extends Vehiculo implements Serializable {
 
     private String anchoAlas;
     private int cantidad_volante;
+    private int capacidad;
 
-    public Avion(Boolean vendido, Fecha fecha_adquisicion, double valor_adquisicion, double gasto, double valor_estimado_venta, String marca, String modelo, Persona duenio_anterior, Persona duenio_nuevo, String anchoAlas, int cantidad_volante) {
+    public Avion(Boolean vendido, Fecha fecha_adquisicion, double valor_adquisicion, double gasto, double valor_estimado_venta, String marca, String modelo, Persona duenio_anterior, Persona duenio_nuevo, String anchoAlas, int cantidad_volante, int capacidad) {
         super(vendido, fecha_adquisicion, valor_adquisicion, gasto, valor_estimado_venta, marca, modelo, duenio_anterior, duenio_nuevo);
         this.anchoAlas = anchoAlas;
         this.cantidad_volante = cantidad_volante;
+        this.capacidad = capacidad;
+        
     }
 
-    public String getAnchoAlas() {
+    public int getCapacidad() {
+		return capacidad;
+	}
+
+	public void setCapacidad(int capacidad) {
+		this.capacidad = capacidad;
+	}
+
+	public String getAnchoAlas() {
         return anchoAlas;
     }
 
