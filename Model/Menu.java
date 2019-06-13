@@ -26,7 +26,7 @@ public class Menu {
 
                     break;
                 case 6:
-
+                    Menu_Admin();
                     break;
             }
         }while(opcion<1 || opcion>6);

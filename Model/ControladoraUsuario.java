@@ -1,8 +1,5 @@
 package Model;
 
-import Archivo.DireccionArchivo;
-import Utils.IOArchivoGenerico;
-
 import java.io.Serializable;
 import java.util.Scanner;
 

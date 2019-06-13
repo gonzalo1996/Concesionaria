@@ -80,4 +80,26 @@ public class Agencia {
         this.admin = admin;
     }
 
+    public String listar_vendedores ()
+    {
+        String total_vendedores = "";
+        for (Vendedor e: lista_vendedores
+             ) {
+
+            total_vendedores+= e.toString();
+
+        }
+        return total_vendedores;
+    }
+
+    public String listar_vehiculos()
+    {
+        String total_vehiculos ="";
+        for (Vehiculo e:lista_vehiculos
+             ) {
+            total_vehiculos+= e.toString();
+        }
+        return total_vehiculos;
+    }
+
 }

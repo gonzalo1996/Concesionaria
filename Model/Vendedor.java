@@ -17,4 +17,9 @@ public class Vendedor extends Persona implements Serializable {
     public Usuario getUsername() {
         return username;
     }
+
+    @Override
+    public String toString() {
+        return super.toString()+ "\nNombre usuario: " + getUsername();
+    }
 }
